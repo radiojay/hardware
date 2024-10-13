@@ -1,0 +1,8 @@
+~*
+*.lck
+*bak
+fp-*
+sym-lib-table
+*backups/
+*sync-conflict*
+\#*

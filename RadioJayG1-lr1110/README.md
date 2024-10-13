@@ -1,13 +1,13 @@
 RadioJay G1 - LR1110
 ====================
 
-Test & dev board for LR1110, which provides GPS snapshot functionality as well as LoRa radio.
+Test & dev board for a Semtech LR1110, providing GPS snapshot functionality as well as LoRa radio.
 A STM32U083 is used as microcontroller for its low power features, familiarity with its peripherals,
 and its 256KB flash, which can be used to store GPS data.
 
 The main purpose of the board is to prototype all the pieces and be able to measure power consumption.
 
-Open questions while designing the board:
+Open questions that came up while designing the board:
 - Is it possible to get away without 900Mhz RF switch, as one can with the stm32wle?
   The stm32wle datasheet has a footnote in the "sub-Ghz radio characteristics" stating
   "When not in RX operation mode up to 22 dBm is accepted [on RFI_P/RFI_N]". Neither the
@@ -20,3 +20,5 @@ Open questions while designing the board:
   clock from the stm32u083 to the LR1110?
 - Would rotating the stm32u883 improve the routing?
 - What are the minimum RF test points needed in the "final" tag?
+
+![Osh park board image](./osh-park-top.png)
