@@ -1,13 +1,6 @@
 RadioJay G1
 ===========
 
-RadioJay bird tracker with GPS, LoRa radio, rechargeable battery, and solar cell.
-
-GPS questions:
---------------
-
-- is RTC xtal required, or can time be injected from uC?
-- is power switch required or is low power mode sufficient? Key issue is dead battery cut-off and
-  subsequent recharge profile
-- use pure software control or use interface pins? (In both directions)
-- need 1.8V Vreg?
+Test & dev board for U-Blox Mia10Q GPS with stm32wle5 microcontroller and integrated LoRa radio.
+This board needs to be powered at 1.8V due to the Mia-M10Q
+(which could alternatively be powered at 3.3V).

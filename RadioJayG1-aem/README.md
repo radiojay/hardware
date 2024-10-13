@@ -1,13 +1,5 @@
 RadioJay G1
 ===========
 
-RadioJay bird tracker with GPS, LoRa radio, rechargeable battery, and solar cell.
-
-GPS questions:
---------------
-
-- is RTC xtal required, or can time be injected from uC?
-- is power switch required or is low power mode sufficient? Key issue is dead battery cut-off and
-  subsequent recharge profile
-- use pure software control or use interface pins? (In both directions)
-- need 1.8V Vreg?
+Solar / battery module using a low-voltage solar cell (either IXOLAR or PowerFilm) with
+E-Peas AEM10330 energy harvesting chip which has a buck converter to output 1.8V.
